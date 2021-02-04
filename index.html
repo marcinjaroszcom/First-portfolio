@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initia-scale=1.0">
+    <title> marcinjarosz.com </title>
+    <meta name="description" content=" Info o stronie">
+    <meta name="keywords" content=" slowa kluczowe">
+    <link rel="icon" href="img/favicon32.png" sizes="32x32" type="image/png">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-header">
+            <a href="#" class="logo"><span>&#60;</span> marcinjarosz.com <span>&#47;&#62;</span></a>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#d1" class="scroll">O Mnie</a></li>
+                    <li><a href="#d2" class="scroll">Oferta</a></li>
+                    <li><a href="#d3" class="scroll">Realizacje</a></li>
+                    <li><a href="#d4" class="scroll">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner" id="d1">
+        <div class="container-banner">
+            <pre class="welcome"></pre>
+            <!--<p>Cześć! Nazywam się Marcin i zajmuję się tworzenie stron internetowych. Jeśli potrzebujesz prostej ale profesjonalnej strony, dodatkowo stworzonej według najnowszysch standardów, zapraszam do kontaktu. </p>-->
+
+            <img src="img/imac.png" class="imac">
+
+            <a class="now" href="mailto:jarosz.marcin.w@gmail.com">Napisz teraz!</a>
+        </div>
+            <div class="wave-img"></div>
+    </div>
+    <div id="d2">
+        <h2> Oferta</h2>
+        <section class="offer">
+            <div class="offer1">
+                <h3>Strony WWW</h3><img src="img/www.png">
+                <p> Tworzenie stron internetowych według najnowszysch standardów.</p>
+            </div>
+            <div class="offer2">
+                <h3>System CMS</h3><img src="img/cms.png">
+                <p>Możliwść stworzenia strony opartej o system zarządzania treścią. </p>
+            </div>
+            <div class="offer3">
+                <h3>Strony responsywne</h3><img src="img/responsive.png">
+                <p>Strony responsywne, dostosowane do urządzeń mobilnych (smartfonów, tabletów)</p>
+            </div>
+            <div class="offer4">
+                <h3>Usługi hostingowe</h3><img src="img/database.png">
+                <p>Mozliwość zapewnienia hostingu na stronę.</p>
+            </div>
+        </section>
+    </div>
+    <section class="web" id="d3">
+        <div class="wave-img"></div>
+        <h2>Realizacje</h2>
+        <div class="web-demo">
+
+            <div class="web1">
+                <img src="img/web1.png">
+                    <a class="cover" href="https://kamienparafia.pl">
+                        <p>Strona Parafii Kamień</p>
+                    </a>
+            </div>
+
+            <div class="web2">
+                <img src="img/web2.png">
+                <a class="cover" href="https://yaxmusic.pl">
+                    <p>Strona Zespołu Muzycznego</p>
+                </a>
+            </div>
+
+            <div class="wave-img-footer"></div>
+        </div>
+    </section>
+    <section class="contact" id="d4">
+        <h2>Kontakt</h2>
+        <p>e-mail: jarosz.marcin.w@gmail.com</p>
+        <img src="img/mail.png" class="envelope">
+        <p>Lub napisz teraz:</p>
+
+        <div class="contact-form">
+            <form method="post" name="contactform" action="#">
+
+                <input type="text" name="name" placeholder="Imię" onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Imię'" required id="inputName">
+
+                <input type="email" name="email" placeholder="E-mail" onfocus="this.placeholder=''"
+                    onblur="this.placeholder='E-mail'" required id="inputEmail">
+                <br>
+                <textarea type="text" name="message" placeholder="Wiadomość" onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Wiadomość'" required id="inputMessage"></textarea>
+                <br>
+                <input type="submit" name="submit" value="Wyślij" id="send">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="wave-img-footer"></div>
+        <p>© 2020 marcinjarosz.com</p>
+    </footer> 
+    <script src="js/script.js"></script>
+</body>
+
+</html>
